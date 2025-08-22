@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --font-noto: var(--font-noto);
+}
+
+@layer {
+  body {
+    @apply bg-[url(/image-3.jpeg)] bg-no-repeat bg-center bg-cover bg-fixed
+  }
+
+  .container {
+    @apply w-[1350px] m-auto
+  }
+
+  .item {
+    @apply text-xl text-black items-end relative mt-7 py-5 pb-4 px-4 hover:text-teal-800 after:content-[""] after:absolute after:-bottom-0 after:left-0 after:h-1 after:w-full after:bg-teal-800 after:transition-transform after:duration-700 after:origin-right after:scale-x-0 hover:after:w-full hover:after:origin-left hover:after:scale-x-100
+  }
+
+   .btn {
+    @apply cursor-pointer px-5 py-3 border-2 border-teal-600 bg-teal-600 rounded-md text-white text-xl font-semibold hover:bg-black hover:text-teal-600
+  }
+
+  .teacher {
+    @apply relative bg-white rounded-l-4xl rounded-br-4xl p-5 justify-center after:content-[""] after:absolute after:-bottom-0 after:left-0 after:rounded-l-4xl after:rounded-br-4xl after:h-full after:w-full after:bg-teal-800/50 after:transition-transform after:duration-700 after:origin-right after:scale-x-0 hover:after:w-full hover:after:origin-left hover:after:scale-x-100
+  }
+}
